@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "edu.iesam.examen"
+    namespace = "com.example.settings"
     compileSdk {
         version = release(36)
 
@@ -15,7 +15,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "edu.iesam.examen"
+        applicationId = "com.example.settings"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

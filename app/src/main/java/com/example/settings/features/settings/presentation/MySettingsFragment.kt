@@ -1,69 +1,69 @@
-package main.java.com.example.settings.features.settings.presentation
+package com.example.settings.features.settings.presentation
 
 import android.os.Bundle
 import android.util.Log
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreferenceCompat
-import edu.iesam.examen.R
+import com.example.settings.R
 
 class MySettingsFragment : PreferenceFragmentCompat() {
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.preferences, rootKey)
+
+        findPreference<SwitchPreferenceCompat>("news")
+            ?.setOnPreferenceChangeListener { _, newValue ->
+                Log.d("news", "news enabled: $newValue")
+                true
+            }
+
+        findPreference<Preference>("developers")
+            ?.setOnPreferenceChangeListener { _, newValue ->
+                Log.d("Developers", "Developers enabled: $newValue")
+                true
+            }
+
+        findPreference<Preference>("externalResources")
+            ?.setOnPreferenceClickListener {
+                Log.d("externalResources", "external Resources enabled")
+                true
+            }
+
+        findPreference<Preference>("projectWebsite")
+            ?.setOnPreferenceClickListener {
+                Log.d("projectWebsite", "projectWebsite")
+                true
+            }
+
+        findPreference<Preference>("contactEmail")
+            ?.setOnPreferenceClickListener {
+                Log.d("contactEmail", "contactEmail")
+                true
+            }
+
+        findPreference<Preference>("shareApplication")
+            ?.setOnPreferenceClickListener {
+                Log.d("shareApplication", "enable share Application")
+                true
+            }
+
+        findPreference<Preference>("privacyPolicy")
+            ?.setOnPreferenceClickListener {
+                Log.d("privacyPolicy", "privacy Policy enabled")
+                true
+            }
+
+        findPreference<Preference>("installedVersion")
+            ?.setOnPreferenceClickListener {
+                Log.d("installedVersion", "installed Version enabled")
+                true
+            }
+
+        findPreference<Preference>("dataVersion")
+            ?.setOnPreferenceClickListener {
+                Log.d("dataVersion", "data Version enabled")
+                true
+            }
     }
-
-    val news = findPreference<SwitchPreferenceCompat>("news")
-        ?.setOnPreferenceChangeListener { _, newValue ->
-            Log.d("news", "news enabled: $newValue")
-            true
-        }
-
-    val developers = findPreference<Preference>("developers")
-        ?.setOnPreferenceChangeListener { _, newValue ->
-            Log.d("Developers", "Developers enabled: $newValue")
-            true
-        }
-
-    val externalResources = findPreference<Preference>("externalResources")
-        ?.setOnPreferenceClickListener {
-            Log.d("externalResources", "external Resources enabled")
-            true
-        }
-
-    val projectWebsite = findPreference<Preference>("projectWebsite")
-        ?.setOnPreferenceClickListener {
-            Log.d("projectWebsite", "projectWebsite")
-            true
-        }
-
-    val contactEmail = findPreference<Preference>("contactEmail")
-        ?.setOnPreferenceClickListener {
-            Log.d("contactEmail", "contactEmail")
-            true
-        }
-
-    val shareApplication = findPreference<Preference>("shareApplication")
-        ?.setOnPreferenceClickListener {
-            Log.d("shareApplication", "enable share Application")
-            true
-        }
-
-    val privacyPolicy = findPreference<Preference>("privacyPolicy")
-        ?.setOnPreferenceClickListener {
-            Log.d("privacyPolicy", "privacy Policy enabled")
-            true
-        }
-
-    val installedVersion = findPreference<Preference>("installedVersion")
-        ?.setOnPreferenceClickListener {
-            Log.d("installedVersion", "installed Version enabled")
-            true
-        }
-
-    val dataVersion = findPreference<Preference>("dataVersion")
-        ?.setOnPreferenceClickListener {
-            Log.d("dataVersion", "data Version enabled")
-            true
-        }
 }
