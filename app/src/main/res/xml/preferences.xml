@@ -1,4 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <PreferenceCategory app:title="Notifications Section">
+
+            <SwitchPreferenceCompat
+                app:key="notifications"
+                app:title="Enable message notifications" />
+
+        </PreferenceCategory>
+
+        <PreferenceCategory app:title="Collaborations Section">
+
+            <Preference
+                app:key="Developers"
+                app:summary="Students who developed the application"
+                app:title="Developers" />
+
+            <Preference
+                app:key="External Resources"
+                app:summary="Third-party resources used in the application."
+                app:title="External Resources" />
+
+        </PreferenceCategory>
+
+        <PreferenceCategory app:title="App Information Section">
+            <Preference
+                app:key="Project Website"
+                app:summary="https://fpiesam.iesalonsodemadrigal.es"
+                app:title="Project Website" />
+
+            <Preference
+                app:key="Contact Email"
+                app:summary="daniel.lopgon.4@gmail.com"
+                app:title="Contact Email" />
+
+            <Preference
+                app:key="Share Application"
+                app:summary=" Link to the Play Store."
+                app:title="Share Application" />
+
+            <Preference
+                app:key="Privacy Policy"
+                app:summary="Tap to view the privacy policy.
+When tapped, it opens the privacy policy in Chrome."
+                app:title="Privacy Policy" />
+
+        </PreferenceCategory>
+
+        <PreferenceCategory app:title="Versions">
+
+            <Preference
+                app:key="Installed Version"
+                app:summary="Installed version number 8.0.3."
+                app:title="Installed Version" />
+
+            <Preference
+                app:key="Data"
+                app:summary="loading.."
+                app:title="Data" />
+
+        </PreferenceCategory>
+
+    </PreferenceScreen>
+
 </PreferenceScreen>
