@@ -1,6 +1,6 @@
 # EyeSense - Settings Module
 
-This module is part of the **EyeSense** Android application. It implements the Settings screen, which centralizes user preferences, application information, and useful resources for both users and developers. The feature has been designed following the principles of Material Design and Android best practices to provide a consistent and intuitive experience.
+This module is part of the Android application. It implements the Settings screen, which centralizes user preferences, application information, and useful resources for both users and developers. The feature has been designed following the principles of Material Design and Android best practices to provide a consistent and intuitive experience.
 
 ## Overview
 
