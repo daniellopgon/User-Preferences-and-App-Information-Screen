@@ -46,7 +46,6 @@ dependencies {
     implementation(libs.androidx.preference.ktx)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
-    implementation(libs.androidx.preference.ktx)
     implementation(libs.material)
     implementation(libs.androidx.fragment)
     implementation(libs.androidx.activity)

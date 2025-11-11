@@ -26,7 +26,7 @@
     <PreferenceCategory app:title="App Information Section">
         <Preference
             app:key="projectWebsite"
-            app:summary="https://fpiesam.iesalonsodemadrigal.es"
+            app:summary="https://github.com/daniellopgon"
             app:title="Project Website" />
 
         <Preference
